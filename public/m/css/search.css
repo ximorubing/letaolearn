@@ -1,0 +1,49 @@
+.container{
+	padding:10px;
+}
+
+.container .searchBox{
+	height:30px;
+	width:100%;
+	position: relative;
+	margin-bottom: 10px;
+}
+.container .searchBox input[type=search]{
+	height: 28px;
+	margin:0;
+	border:1px solid #006699;
+	font-size: 11px;
+	padding:0;
+	padding:0 60px 0 10px;
+	width:100%;
+	background-color: #fff;
+	
+}
+
+.container .searchBox input[type=button]{
+	height:28px;
+	width:60px;
+	background-color:#006699;
+	color:#fff;
+	font-size: 14px;
+	position: absolute;
+	top:0;
+	right:0;
+	border:1px solid #006699;
+	line-height: 0;
+}
+.historyBox{
+	margin-bottom: 10px;
+}
+
+.historyBox span{
+	color:#666;
+	font-size:12px;
+	
+}
+.historyBox #emptyBtn{
+	font-size:18px;
+}
+.historyBox .clearBtn{
+	line-height: 20px;
+}

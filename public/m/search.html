@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>乐淘m</title>
+    <link rel="stylesheet" href="assets/mui/css/mui.min.css">
+	<link rel="stylesheet" href="assets/fontAwesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/search.css">
+	<script src="assets/artTemplate/template-web.js"></script>
+</head>
+<body>
+	<header class="mui-bar mui-bar-nav my-header">
+		<h1 class="mui-title">搜索中心</h1>
+	</header>
+	<div class="mui-content">
+		<div class="container">
+			<div class="searchBox">
+				<input type="search" placeholder="搜索你喜欢的商品" id="inputBtn"/>
+				<input type="button" value="搜索" id="searchBtn"/>
+			</div>
+			<div class="historyBox mui-clearfix">
+				<span class="history mui-pull-left">搜索历史</span>
+				<span class="clearBtn mui-pull-right">
+					<a href="#" class="mui-icon mui-icon-trash" id="emptyBtn"></a>
+					清空记录</span>
+			</div>
+			<div class="historyList">
+				<ul class="mui-table-view" id="history">
+				   
+				   
+				</ul>
+			</div>
+		</div>
+		
+	</div>
+	<nav class="mui-bar mui-bar-tab my-footer">
+		<a class="mui-tab-item mui-active">
+			<span class="mui-icon mui-icon-home"></span>
+			<span class="mui-tab-label">首页</span>
+		</a>
+		<a class="mui-tab-item">
+			<span class="mui-icon mui-icon-bars"></span>
+			<span class="mui-tab-label">分类</span>
+		</a>
+		<a class="mui-tab-item">
+			<span class="mui-icon fa fa-shopping-cart"></span>
+			<span class="mui-tab-label">购物车</span>
+		</a>
+		<a class="mui-tab-item">
+			<span class="mui-icon mui-icon-person"></span>
+			<span class="mui-tab-label">会员中心</span>
+		</a>
+	</nav>
+	<script src="assets/mui/js/mui.min.js"></script>
+	<script src="assets/zepto/zepto.min.js"></script>
+	<script src="js/search.js"></script>
+	<script id="historytp1" type="text/html">
+		{{each result val}}
+		<li class="mui-table-view-cell">{{val}}</li>
+		{{/each}}
+	</script>
+</body>
+</html>

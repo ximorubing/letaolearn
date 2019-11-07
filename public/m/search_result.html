@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>乐淘m</title>
+    <link rel="stylesheet" href="assets/mui/css/mui.min.css">
+	<link rel="stylesheet" href="assets/fontAwesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/search_result.css">
+	<script src="assets/artTemplate/template-web.js"></script>
+</head>
+<body>
+	<header class="mui-bar mui-bar-nav my-header">
+		<h1 class="mui-title">搜索中心</h1>
+		<a href="search.html" class="mui-icon mui-icon-back left"></a>
+	</header>
+	
+		<div class="container refreshContainer">
+			<div>
+			
+			<div class="mui-row fifter">
+			        <div class="mui-col-sm-6 mui-col-xs-6">
+			            <li class="mui-table-view-cell">
+			                <a href="#" class="priceOrd">
+			                    价格  
+								<span class="mui-icon mui-icon-arrowdown"></span>
+			                </a>
+			            </li>
+			</div>
+			        <div class="mui-col-sm-6 mui-col-xs-6">
+			            <li class="mui-table-view-cell">
+			                <a href="#">
+			                    销量
+								<span class="mui-icon mui-icon-arrowdown"></span>
+			                </a>
+			            </li>
+			        </div>
+			    </div>
+			<div class="product">
+				
+				
+				<ul class="mui-clearfix" id="productList">
+				
+				</ul>
+				
+			</div>
+		</div>
+		</div>
+	
+	<nav class="mui-bar mui-bar-tab my-footer">
+		<a class="mui-tab-item mui-active">
+			<span class="mui-icon mui-icon-home"></span>
+			<span class="mui-tab-label">首页</span>
+		</a>
+		<a class="mui-tab-item">
+			<span class="mui-icon mui-icon-bars"></span>
+			<span class="mui-tab-label">分类</span>
+		</a>
+		<a class="mui-tab-item">
+			<span class="mui-icon fa fa-shopping-cart"></span>
+			<span class="mui-tab-label">购物车</span>
+		</a>
+		<a class="mui-tab-item">
+			<span class="mui-icon mui-icon-person"></span>
+			<span class="mui-tab-label">会员中心</span>
+		</a>
+	</nav>
+	<script src="assets/mui/js/mui.min.js"></script>
+	<script src="assets/zepto/zepto.min.js"></script>
+	<script src="js/public.js"></script>
+	<script src="js/search_result.js"></script>
+	<script id="searchResult" type="text/html">
+		{{each data value i}}
+		<li>
+			<a href="detail.html?id={{value.id}}"><img src="{{value.pic[0].picAddr}}" alt=""><p class="name">{{value.proName}}</p>
+			<p class="price">
+				<span>￥{{value.price}}</span>
+				<span>￥{{value.oldPrice}}</span>
+			</p>
+			<span class="buy-now">立即购买</span>
+			</a>
+			
+		</li>
+		{{/each}}
+	</script>
+</body>

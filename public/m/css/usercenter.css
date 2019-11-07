@@ -1,0 +1,23 @@
+.mui-content .userList li{
+	font-size:14px;
+}
+
+.mui-content .userList .logout{
+	margin:6px auto;
+	text-align: center;
+	display: block;
+	height:35px;
+	background-color: #006699;
+	width:100px;
+	line-height: 16px;
+	color:#fff;
+	border-radius: 8px;
+	
+}
+.mui-content .userList:after{
+	height:0;
+}
+
+.mui-content>.mui-table-view:first-child{
+	margin-top:0;
+}

@@ -1,0 +1,33 @@
+.my-header .mui-icon{
+	color:#fff;
+}
+
+.mui-content .getCode{
+	font-size:14px;
+	color:#006699;
+	position: absolute;
+	right:10px;
+	display: block;
+	height:40px;
+	line-height: 40px;
+}
+
+.mui-content .sign{
+	font-size:14px;
+	color:#006699;
+	position: absolute;
+	right:10px;
+	display: block;
+	height:40px;
+	line-height: 40px;
+}
+.mui-content .regsiter-box{
+	padding:11px 15px;
+}
+.mui-content .regsiter-btn{
+	width: 100%;
+	
+}
+.mui-content .mui-input-group:after{
+	height: 0;
+}

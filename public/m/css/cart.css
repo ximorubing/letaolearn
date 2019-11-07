@@ -1,0 +1,39 @@
+.mui-content>.mui-table-view:first-child{
+	margin-top:0;
+}
+.mui-table-view .p-img{
+	max-width: 60px;
+	width: 60px;
+	height: 60px;
+}
+.productTitle{
+	height:40px;
+	line-height: 20px;
+	color:#666666;
+	white-space: normal;
+	
+	width:100%;
+}
+
+.numBox {
+	padding: 5px 0;
+	font-size: 14px;
+}
+.numBox .now{
+  color: #ea543d;
+  font-weight: 700;
+}
+.numBox .old{
+	color: #ccc;
+	text-decoration:line-through;
+	font-size: 12px;
+}
+.numBox .proNum{
+	color: #8f8f94;
+	font-size: 12px;
+}
+
+.size{
+	font-size: 12px;
+	color: #8f8f94;
+}

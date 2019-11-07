@@ -1,0 +1,71 @@
+.my-content{
+	position: absolute;
+	left:0;
+	top:44px;
+	bottom: 50px;
+	width:100%;
+	background:#F5F5F5;
+}
+.content-left,.content-right{
+	
+	height:100%;
+}
+.content-left{
+	width:80px;
+	float:left;
+	position: relative;
+	
+}
+.content-left .mui-scroll-wrapper{
+	width:80px;
+	
+}
+.content-left .mui-scroll{
+	background: #fff;
+}
+.content-left .mui-scroll-wrapper a{
+	display: block;
+	height:40px;
+	text-align: center;
+	line-height: 40px;
+	font-size:14px;
+	border-right:1px solid #E0E0E0;
+	border-bottom:1px solid #E0E0E0;
+	
+}
+.content-left .mui-scroll-wrapper .active{
+	border-right:1px solid transparent;
+	border-bottom:1px solid transparent;
+	background: #F5F5F5;
+	
+}
+.content-right{
+	margin-left:80px;
+	position: relative;
+	
+}
+
+.content-right .brand-list {
+	width: 100%;
+	background:#fff;
+	margin:10px;
+	
+}
+.content-right .brand-list li{
+	width:33.3333%;
+	float:left;
+}
+.content-right .brand-list li a{
+	display:block;
+}
+.content-right .brand-list li a img{
+	width:100%;
+}
+.content-right .brand-list li a p{
+	text-align: center;
+	font-size:14px;
+}
+.content-right .brand-list .nodata{
+	color:#006699;
+	font-size:14px;
+}
