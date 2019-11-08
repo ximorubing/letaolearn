@@ -1,56 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>乐淘m</title>
-    <link rel="stylesheet" href="assets/mui/css/mui.min.css">
-	<link rel="stylesheet" href="assets/fontAwesome/css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/base.css">
-	<link rel="stylesheet" href="css/cart.css">
-	<script src="assets/zepto/zepto.min.js"></script>
-	<script src="assets/artTemplate/template-web.js"></script>
-	<script src="js/public.js"></script>
-	<script src="js/cart.js"></script>
-</head>
-<body>
-	<header class="mui-bar mui-bar-nav my-header">
-		<h1 class="mui-title">购物车</h1>
-		<a href="detail.html?id=1" class="mui-icon mui-icon-back left"></a>
-	</header>
-	<div class="mui-content">
-		<ul class="mui-table-view" id="cartList">
-		    
-		</ul>
-	</div>
-	<nav class="mui-bar mui-bar-tab my-footer">
-		<a class="mui-tab-item " href="index.html">
-			<span class="mui-icon mui-icon-home"></span>
-			<span class="mui-tab-label">首页</span>
-		</a>
-		<a class="mui-tab-item" href="category.html">
-			<span class="mui-icon mui-icon-bars"></span>
-			<span class="mui-tab-label">分类</span>
-		</a>
-		<a class="mui-tab-item mui-active">
-			<span class="mui-icon fa fa-shopping-cart"></span>
-			<span class="mui-tab-label">购物车</span>
-		</a>
-		<a class="mui-tab-item" href="usercenter.html">
-			<span class="mui-icon mui-icon-person"></span>
-			<span class="mui-tab-label">会员中心</span>
-		</a>
-	</nav>
-	<script src="assets/mui/js/mui.min.js"></script>
-	<script id="cartTp1" type="text/html">
-		{{each result val }}
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>乐淘m</title>
+		<link rel="stylesheet" href="assets/mui/css/mui.min.css">
+		<link rel="stylesheet" href="assets/fontAwesome/css/font-awesome.min.css">
+		<link rel="stylesheet" href="css/base.css">
+		<link rel="stylesheet" href="css/cart.css">
+		<script src="assets/zepto/zepto.min.js"></script>
+		<script src="assets/artTemplate/template-web.js"></script>
+		<script src="js/public.js"></script>
+		<script src="js/cart.js"></script>
+	</head>
+	<body>
+		<header class="mui-bar mui-bar-nav my-header">
+			<h1 class="mui-title">购物车</h1>
+			<a href="detail.html?id=1" class="mui-icon mui-icon-back left"></a>
+		</header>
+		<div class="mui-content">
+			<ul class="mui-table-view" id="cartList">
+
+			</ul>
+
+
+		</div>
+		</div>
+		<nav class="mui-bar mui-bar-tab my-footer">
+			<a class="mui-tab-item " href="index.html">
+				<span class="mui-icon mui-icon-home"></span>
+				<span class="mui-tab-label">首页</span>
+			</a>
+			<a class="mui-tab-item" href="category.html">
+				<span class="mui-icon mui-icon-bars"></span>
+				<span class="mui-tab-label">分类</span>
+			</a>
+			<a class="mui-tab-item mui-active">
+				<span class="mui-icon fa fa-shopping-cart"></span>
+				<span class="mui-tab-label">购物车</span>
+			</a>
+			<a class="mui-tab-item" href="usercenter.html">
+				<span class="mui-icon mui-icon-person"></span>
+				<span class="mui-tab-label">会员中心</span>
+			</a>
+		</nav>
+		<script src="assets/mui/js/mui.min.js"></script>
+		<script type="text/html" id="editTp1">{{set list=productSize.split("-")}}<div class="updateBox"><div class="size mui-clearfix" id="changeSize">尺码:<% for(var i=list[0];i<list[1];i++){%><span ><%= i %></span><% } %>
+</div><div class="amount mui-clearfix"><div>数量:</div><div><span class="decrease">-</span><input type="text" value="{{num}}" name="num"><span class="increase">+</span></div></div></div>{{}}
+</script>
+		<script id="cartTp1" type="text/html">
+			{{each result val }}
 		<li class="mui-table-view-cell mui-media">
 		    <a href="javascript:;">
 		        
 		      
 		            <div class="mui-slider-right mui-disabled">
-		        		<a href="addAddress.html?edit=1" class="mui-btn mui-btn-blue edit-btn" dataid='{{val.id}}'>编辑</a>
+		        		<a href="#" class="mui-btn mui-btn-blue edit-btn" dataid='{{val.id}}'>编辑</a>
 		            	<a href="javascript:;" class="mui-btn mui-btn-red delete-btn" dataid='{{val.id}}'>删除</a>
 		            </div>
 					<img class="mui-media-object mui-pull-left p-img" src="{{val.pic[0].picAddr}}">
@@ -67,11 +73,11 @@
 							
 						</div>
 					</div>
-					<div class="size">鞋码:{{val.size}}</div>
+					<div class="outsize">鞋码:{{val.size}}</div>
 		        </div>
 		    </a>
 		</li>
 		{{/each}}
 	</script>
-</body>
+	</body>
 </html>
